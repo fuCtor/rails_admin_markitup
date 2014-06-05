@@ -11,8 +11,8 @@ module RailsAdmin
 
           register_instance_option :config_options do
             {
-              js_theme_path: 'markitup/sets/markdown/set.js',
-              css_theme_path: 'markitup/sets/markdown/style.scss'
+              js_theme_path: 'assets/markitup/sets/markdown/set.js',
+              css_theme_path: 'assets/markitup/sets/markdown/style.scss'
             }
           end
 
