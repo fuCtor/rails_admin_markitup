@@ -17,7 +17,7 @@ module RailsAdmin
           end
 
           register_instance_option :css_location do
-            ActionController::Base.helpers.asset_path('markitup/skins/simple/style.scss')
+            ActionController::Base.helpers.asset_path('markitup/skins/simple/style.css')
           end
 
           register_instance_option :js_location do
