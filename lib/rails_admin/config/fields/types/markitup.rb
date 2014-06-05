@@ -9,9 +9,6 @@ module RailsAdmin
           # Register field type for the type loader
           RailsAdmin::Config::Fields::Types.register(self)
 
-          # If you want to have a different toolbar configuration for wysihtml5
-          # you can use a Ruby hash to configure these options:
-          # https://github.com/jhollingworth/bootstrap-wysihtml5/#advanced
           register_instance_option :config_options do
             {
               js_theme_path: ActionController::Base.helpers.asset_path('markitup/sets/markdown/set.js'),
