@@ -42,9 +42,16 @@ config.model 'Story' do
     field :body, :markitup
   end
 end
+
 ```
 
-Use the built-in markdown helper to render it (via redcarpet)
+To enable previews, mount the Markitup engine in `routes.rb`
+
+```ruby
+mount Markitup::Rails::Engine, at: "markitup", as: "markitup"
+```
+
+You can also use the built-in markdown helper to render the content in your views (via redcarpet)
 
 ```ruby
 <%= parse_markdown("YOUR MARKDOWN CONTENT HERE") %>
