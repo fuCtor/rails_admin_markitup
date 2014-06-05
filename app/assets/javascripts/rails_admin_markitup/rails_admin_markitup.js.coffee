@@ -20,11 +20,7 @@ $(document).on 'rails_admin.dom_ready', (e, content) ->
           {name:'Bulleted List', openWith:'- ' },
           {name:'Numeric List', openWith: -> (markItUp) markItUp.line+'. '},
           {separator:'---------------' },
-          {name:'Picture', key:"P", replaceWith:'![[![Alternative text]!]]([![Url:!:http://]!] "[![Title]!]")'},
           {name:'Link', key:"L", openWith:'[', closeWith:']([![Url:!:http://]!] "[![Title]!]")', placeHolder:'Your text to link here...' },
-          {separator:'---------------'},    
-          {name:'Quotes', openWith:'> '},
-          {name:'Code Block / Code', openWith:'(!(\t|!|`)!)', closeWith:'(!(`)!)'},
           {separator:'---------------'},
           {name:'Preview', call:'preview', className:"preview"}
         ]
