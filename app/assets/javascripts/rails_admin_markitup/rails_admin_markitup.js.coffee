@@ -20,7 +20,7 @@ $(document).on 'rails_admin.dom_ready', (e, content) ->
           {name:'Bulleted List', openWith:'- ' },
           {name:'Numeric List', openWith: -> (markItUp) markItUp.line+'. '},
           {separator:'---------------' },
-          {name:'Link', classname: "markItUpButton12", key:"L", openWith:'[', closeWith:']([![Url:!:http://]!] "[![Title]!]")', placeHolder:'Your text to link here...' },
+          {name:'Link', className: "markItUpButton12", key:"L", openWith:'[', closeWith:']([![Url:!:http://]!] "[![Title]!]")', placeHolder:'Your text to link here...' },
           {separator:'---------------'},    
           {name:'Preview', call:'preview', className:"preview"}
         ]
