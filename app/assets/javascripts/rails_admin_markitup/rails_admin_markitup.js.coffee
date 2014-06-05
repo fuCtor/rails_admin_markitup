@@ -21,7 +21,7 @@ $(document).on 'rails_admin.dom_ready', (e, content) ->
           {name:'Numeric List', openWith: -> (markItUp) markItUp.line+'. '},
           {separator:'---------------' },
           {name:'Link', key:"L", openWith:'[', closeWith:']([![Url:!:http://]!] "[![Title]!]")', placeHolder:'Your text to link here...' },
-          {separator:'---------------'},
+          {separator:'---------------'},    
           {name:'Preview', call:'preview', className:"preview"}
         ]
       }
