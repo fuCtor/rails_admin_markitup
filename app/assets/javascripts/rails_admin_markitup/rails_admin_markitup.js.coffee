@@ -33,7 +33,6 @@ $(document).on 'rails_admin.dom_ready', (e, content) ->
     if array.length
       @array = array
       options = $(array[0]).data('options')
-      config_options = $.parseJSON(options['config_options'])
       if not window.markItUp
         $('head').append('<link href="' + options['csspath'] + '" rel="stylesheet" media="all" type="text\/css">')
         $.getScript options['jspath'], (script, textStatus, jqXHR) =>
