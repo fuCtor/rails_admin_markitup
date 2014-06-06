@@ -36,9 +36,7 @@ $(document).on 'rails_admin.dom_ready', (e, content) ->
       config_options = $.parseJSON(options['config_options'])
       if not window.markItUp
         $('head').append('<link href="' + options['csspath'] + '" rel="stylesheet" media="all" type="text\/css">')
-        $('head').append('<link href="' + config_options['css_theme_path'] + '" rel="stylesheet" media="all" type="text\/css">')
         $.getScript options['jspath'], (script, textStatus, jqXHR) =>
-          $.getScript config_options['js_theme_path']
           goMarkitups(@array, config_options)
       else
         goMarkitups(@array, config_options)

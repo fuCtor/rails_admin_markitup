@@ -9,12 +9,12 @@ module RailsAdmin
           # Register field type for the type loader
           RailsAdmin::Config::Fields::Types.register(self)
 
-          register_instance_option :config_options do
-            {
-              js_theme_path: ActionController::Base.helpers.asset_path('markitup/sets/markdown/set.js'),
-              css_theme_path: ActionController::Base.helpers.asset_path('markitup/sets/markdown/style.scss')
-            }
-          end
+          # register_instance_option :config_options do
+          #   {
+          #     js_theme_path: ActionController::Base.helpers.asset_path('markitup/sets/markdown/set.js'),
+          #     css_theme_path: ActionController::Base.helpers.asset_path('markitup/sets/markdown/style.scss')
+          #   }
+          # end
 
           register_instance_option :css_location do
             ActionController::Base.helpers.asset_path('markitup/skins/simple/style.css')
