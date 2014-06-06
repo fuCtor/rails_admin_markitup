@@ -3,7 +3,7 @@ $(document).on 'rails_admin.dom_ready', (e, content) ->
   content = if content then content else $('form')
 
   if content.length
-    goMarkitups = (array, config_options) =>
+    goMarkitups = (array) =>
       markitup_settings = {
         previewParserPath: '/markitup/preview'
         markupSet: [
@@ -36,6 +36,6 @@ $(document).on 'rails_admin.dom_ready', (e, content) ->
       if not window.markItUp
         $('head').append('<link href="' + options['csspath'] + '" rel="stylesheet" media="all" type="text\/css">')
         $.getScript options['jspath'], (script, textStatus, jqXHR) =>
-          goMarkitups(@array, config_options)
+          goMarkitups(@array)
       else
-        goMarkitups(@array, config_options)
+        goMarkitups(@array)
